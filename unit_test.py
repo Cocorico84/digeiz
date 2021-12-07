@@ -59,7 +59,7 @@ class DatabaseTest(TestCase):
         unit = Unit(id=1, name='test', mall_id='1')
         db.session.add(unit)
         db.session.commit()
-        units = unit.query.all()
+        units = Unit.query.all()
         assert unit in units
 
     def test_update_unit(self):
