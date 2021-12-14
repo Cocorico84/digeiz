@@ -1,5 +1,5 @@
 from config import ma
-from models import Account, Mall, Unit
+from api.models.models import Account, Mall, Unit
 
 
 class AccountSchema(ma.Schema):

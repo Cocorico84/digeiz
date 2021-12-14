@@ -1,7 +1,7 @@
 import os
-from app import db
-from app import Account
-from models import Mall, Unit
+
+from api.models.models import Account, Mall, Unit, db
+
 
 accounts = [
     {'id': '1', 'name': 'Farrell'},
@@ -12,14 +12,14 @@ accounts = [
 malls = [
     {'id': '1', 'name': 'Red', 'account_id': '1'},
     {'id': '2', 'name': 'Blue', 'account_id': '1'},
-    {'id': '3','name': 'Green', 'account_id': '2'},
+    {'id': '3', 'name': 'Green', 'account_id': '2'},
 
 ]
 
 units = [
     {'id': '1', 'name': 'One', 'mall_id': '2'},
     {'id': '2', 'name': 'Two', 'mall_id': '1'},
-    {'id': '3','name': 'Three', 'mall_id': '2'},
+    {'id': '3', 'name': 'Three', 'mall_id': '2'},
 
 ]
 
